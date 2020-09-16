@@ -1,13 +1,13 @@
 import React from "react";
 
-import todo from "./project/todo_app"
+import Todo from "../projects/Todo"
 
-export default function Content() {
+export default function fContent() {
   return (
     <div>
       <h1> Satyam Raikar </h1>
       <p>App 1 TODO List -</p>
-      <Todo_app />
+      <Todo />
     </div>
   );
 }

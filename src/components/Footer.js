@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Content() {
+export default function fFooter() {
   return (
     <div>
       <h1> This is a Footer </h1>
