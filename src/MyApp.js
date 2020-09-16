@@ -8,8 +8,8 @@ import Content from "./components/Content"
 export default function MyApp(){
 return(
 <div>
-<Header />
-<Content / >
+<h1> My App</h1>
+
 </div>
 
 )
