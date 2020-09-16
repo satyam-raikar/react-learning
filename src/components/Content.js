@@ -4,25 +4,28 @@ import Todo from "../projects/Todo";
 import TimeOfDay from "../projects/TimeOfDay";
 import ContactCard from "../projects/ContactCard";
 import Joke from "../projects/Joke";
+import jokesData from "../projects/jokesData";
 
 export default function fContent() {
+
+   const jokeComponents = jokesData.map(joke => <Joke que={joke.que} ans={joke.ans}/>)
+      
+
   return (
     <div>
       <TimeOfDay />
       <br />
       <hr />
       <p>Project Joke - </p>
-      <Joke
-        que="What's the best thing about Switzerland?"
-        ans="I don't know, but the flag is a big plus!"
-      />
-      <Joke
-        que="Did you hear about the mathematician who's afraid of negative numbers?"
-        ans="He'll stop at nothing to avoid them!"
-      />
+      {jokeComponents}
+     
+
       <br />
       <hr />
       <p>Project TODO List -</p>
+      <Todo />
+      <Todo />
+      <Todo />
       <Todo />
       <br />
       <hr />
@@ -66,3 +69,5 @@ export default function fContent() {
     </div>
   );
 }
+
+      

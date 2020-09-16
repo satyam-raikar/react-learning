@@ -1,4 +1,5 @@
 import React from "react"
+import jokesData from "./jokesData"
 
 export default function Joke(props){
 
