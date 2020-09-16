@@ -8,7 +8,9 @@ import Content from "./components/Content"
 export default function MyApp(){
 return(
 <div>
-<h1> My App</h1>
+<Header />
+<Content />
+<Footer />
 
 </div>
 
