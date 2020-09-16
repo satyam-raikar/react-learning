@@ -1,10 +1,9 @@
-import React from "react";
+import rect from "react"
 
-
-export default function MyApp(){
+export default function Content(){
 return(
 <div>
-<h1> Satyam Raikar </h1>
+  <h1> Satyam Raikar </h1>
 <p>
 this is a test
 </p>
@@ -15,9 +14,7 @@ this is a test
 <li>Goa</li>
 
 </ul>
-
 </div>
-
 )
 
 }
