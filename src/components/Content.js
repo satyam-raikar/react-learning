@@ -1,20 +1,13 @@
-import React from "react"
+import React from "react";
 
-export default function Content(){
-return(
-<div>
-  <h1> Satyam Raikar </h1>
-<p>
-this is a test
-</p>
+import todo from "./project/todo_app"
 
-<ul> 
-<li>Pune</li>
-<li>Mumbai</li>
-<li>Goa</li>
-
-</ul>
-</div>
-)
-
+export default function Content() {
+  return (
+    <div>
+      <h1> Satyam Raikar </h1>
+      <p>App 1 TODO List -</p>
+      <Todo_app />
+    </div>
+  );
 }
