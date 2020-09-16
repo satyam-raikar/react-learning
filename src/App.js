@@ -10,7 +10,10 @@ export default function App() {
       <p>Start editing to see some magic happen :)</p>
       <ul> title 1 </ul>
       <ul> title 2 </ul>
-      <ul> title 3 </ul>
+      <ul> title 3
+      <li> sub 1 </li>
+      <li> sub 2 </li>
+       </ul>
     </div>
   );
 }
