@@ -15,7 +15,7 @@ export default function fContent() {
       
   const productComponent = productsData.map(p => <Product name={p.name} price={p.price} description={p.description}/>)
 
-  const todoComponent = todoData.map(thing => < Todo task={thing.text} status={thing.compleated}/>)
+  const todoComponent = todoData.map(thing => < Todo key={thing.id} task={thing.text} status={thing.completed}/>)
 
   return (
     <div>
