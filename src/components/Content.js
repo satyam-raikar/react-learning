@@ -5,15 +5,24 @@ import TimeOfDay from "../projects/TimeOfDay";
 import ContactCard from "../projects/ContactCard";
 import Joke from "../projects/Joke";
 import jokesData from "../projects/jokesData";
+import Product from "../projects/Product"
+import productsData from "../projects/productsData"
+import todoData from "../projects/todoData"
 
 export default function fContent() {
 
    const jokeComponents = jokesData.map(joke => <Joke que={joke.que} ans={joke.ans}/>)
       
+  const productComponent = productsData.map(p => <Product name={p.name} price={p.price} description={p.description}/>)
+
+  const todoComponent = todoData.map(thing => < Todo task={thing.text} status={thing.compleated}/>)
 
   return (
     <div>
       <TimeOfDay />
+
+      {productComponent}
+
       <br />
       <hr />
       <p>Project Joke - </p>
@@ -23,10 +32,8 @@ export default function fContent() {
       <br />
       <hr />
       <p>Project TODO List -</p>
-      <Todo />
-      <Todo />
-      <Todo />
-      <Todo />
+      {todoComponent}
+      
       <br />
       <hr />
       <p>Project Contact Card -</p>
